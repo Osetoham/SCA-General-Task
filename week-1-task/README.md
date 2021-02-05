@@ -18,7 +18,9 @@ This readme very clearly describes the test process and it's output, it also sho
 **To see group created, this command is used**
 
 *cat /etc/group*
+
 <img alt='#' src='img/015.PNG'>
+
 <img alt='#' src='img/016.PNG'>
 
 
@@ -34,7 +36,7 @@ This readme very clearly describes the test process and it's output, it also sho
 
 **To demonstrate that user(s) in a group cannot access files/folders that belong to another group unless they are added to that group, the illustration below is provided**
 
-To demonstrate a user (user laura) is given sudo access, the *visudo command lets you edit the sudo files*, in the file below you would see that the admin has access to all files;
+A user (user laura) is given sudo access, the *visudo command lets you edit the sudo files*, in the file below you would see that the admin has access to all files;
 
 <img alt='#' src='img/014.PNG'>
 <img alt='#' src='img/005.PNG'>
@@ -57,7 +59,7 @@ Firstly group root is given access to write with the command as shown below;
 
 <img alt='#' src='img/009.PNG'>
 
-if the user tries to access Scaschool folder which belongs to group root, this action will be denied as shown below;
+If the user tries to access Scaschool folder which belongs to group root, this action will be denied as shown below;
 
 <img alt='#' src='img/010.PNG'>
 
