@@ -1,3 +1,6 @@
+#!/bin/bash
+#Task for the week
+#Mercy 12/2/2021
 
 #---------Number 1--------
 var1=$1
