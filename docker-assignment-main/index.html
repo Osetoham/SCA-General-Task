@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Image Immutabilty</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(230, 219, 219)
+        }
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 10% auto;
+            max-width: 1024px;
+            line-height: 2;
+
+            
+        }
+
+        p{
+            font-size: 20px;
+            
+        }
+
+        ul{
+            margin: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>CONTAINER IMAGE IMMUTABILITY</h1>
+    <p>An immutable image is an image that contains everything it needs to run the application, so obviously including your source code Docker containers are in fact immutable. This means that a running container never changes because in case you need to update it, the best practice is to create a new container with the updated version of your application and delete the old one.</p>
+    <ul>
+        <li>A Docker image is analogous to a compiled program executable.</li>
+        <li>A Docker container is an instance of the docker image, and it's therefore one process that you started by invoking that program executable.</li>
+    </ul>
+
+    <p>A given running process is immutable, in the sense that you don’t expect to modify the code for its program while it’s running. You would instead modify the source code, build a new executable, and start a new process to replace the current process.</p>
+    </div>
+</body>
+</html>
