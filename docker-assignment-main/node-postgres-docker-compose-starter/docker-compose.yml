@@ -11,5 +11,8 @@ db:
   image: postgres
   environment:
     - POSTGRES_PASSWORD=postgres
+  volumes:
+    - ./pgdata:/var/lib/postgresql/data
+    - ./db/initdb.d:/docker-entrypoint-initdb.d
   ports:
     - "5432:5432"
