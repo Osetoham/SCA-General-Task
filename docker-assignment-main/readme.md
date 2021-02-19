@@ -39,9 +39,35 @@ This will start the server and postgres DB
 
 >NB: You can visit the test route on localhost:3005/test_db
 
+
+Command to push to DockerHub
+
+```sh
+docker tag <image> <user ID>/<image>
+```
+
+```sh
+docker push <user ID>/<image>
+```
+
 Links to the DockerHub Images
 
 [link1](https://hub.docker.com/repository/docker/mercyose/nginx-server)
 [link2](https://hub.docker.com/repository/docker/mercyose/apache-server)
 [link3](https://hub.docker.com/repository/docker/mercyose/nodejs-webapp)
 [link4](https://hub.docker.com/repository/docker/mercyose/node-postgres-docker-compose-starter_web)
+
+Command to push to GCR
+
+```sh
+docker tag <image-name> <registry name>/[PROJECT ID]/<image-name>
+```
+
+```sh
+docker push <registry name>/[PROJECT ID]/<image-name>
+```
+>NB: This works after installing and initializing Google Cloud SDK
+
+Link to the GCR
+
+[link5](https://console.cloud.google.com/gcr/images/durable-timing-305313?project=durable-timing-305313)
